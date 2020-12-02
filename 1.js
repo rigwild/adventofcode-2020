@@ -1,5 +1,7 @@
 // @ts-check
 
+module.exports = {}
+
 /*
 --- Day 1: Report Repair ---
 After saving Christmas five years in a row, you've decided to take a vacation at a nice resort on a tropical island. Surely, Christmas will go on without you.
@@ -38,10 +40,6 @@ In your expense report, what is the product of the three entries that sum to 202
 Your puzzle answer was 144554112.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
-
-At this point, you should return to your Advent calendar and try another puzzle.
-
-If you still want to see it, you can get your puzzle input.
 */
 
 // prettier-ignore
@@ -67,7 +65,6 @@ const solution1 = (nums, target) => {
  */
 const solution2 = (nums, target) => {
   nums.sort((a, b) => a - b)
-  console.log(nums)
   for (let i = 0; i < nums.length - 2; i++) {
     if (i > 0 && nums[i] == nums[i - 1]) continue
 
